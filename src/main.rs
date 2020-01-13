@@ -145,7 +145,7 @@ impl State for QuickTest {
                     Return => self.type_char('\n'),
                     Left => self.cursor = self.cursor_left(),
                     Right => self.cursor = self.cursor_right(),
-                    _ => self.ast_dirty = false,
+                    _ => {},
                 }
             }
             _ => {}
